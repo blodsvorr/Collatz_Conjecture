@@ -104,3 +104,5 @@ function CollatzExecute () {
         console.log("\nNumber of Steps");
         console.log(cc1.getStepCounter());
 }
+
+CollatzExecute() ;
