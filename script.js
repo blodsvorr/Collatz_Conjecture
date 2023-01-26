@@ -103,11 +103,11 @@ function CollatzExecute () {
             str += cc1.getCurrentStep();
             
         }
-        
-        console.log( str );
 
-        console.log("\nNumber of Steps");
-        console.log(cc1.getStepCounter());
+        str += "\nNumber of Steps";
+        str += cc1.getStepCounter();
+
+        document.getElementById ( 'CC' ).innerHTML = str ;
 }
 
 CollatzExecute() ;
