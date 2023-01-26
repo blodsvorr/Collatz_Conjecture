@@ -67,39 +67,44 @@ this.horizLength += hAdd;
 }
 
 function CollatzExecute () {
-        let start = 43;
+        let start = 144;
+        
+        let str = "";
 
         let cc1 = new CollatzFunction(start);
 
-        console.log(cc1.getCurrentStep());
+        str += cc1.getCurrentStep();
 
         while (cc1.getCurrentStep() !== 1) {
             if (cc1.getCurrentStep() % 2 === 0) {
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    console.log(" ");
+                    str += " ";
                 }
-                console.log("\n");
+                str += "\n"; 
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    console.log(" ");
+                    str += " ";
                 }
-                console.log("|");
+                str += "|";
 
                 cc1.takeStep();
 
-                console.log("\n");
+                str += "\n";
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    console.log(" ");
+                    str += " ";
                 }
             } else if (cc1.getCurrentStep() % 2 !== 0) {
-                console.log(" -- ");
+                str += " -- ";
                 cc1.addToHLength(4);
                 cc1.addToHLength(String(cc1.getCurrentStep()).length);
 
                 cc1.takeStep();
             }
 
-            console.log(cc1.getCurrentStep());
+            str += cc1.getCurrentStep();
+            
         }
+        
+        console.log( str );
 
         console.log("\nNumber of Steps");
         console.log(cc1.getStepCounter());
