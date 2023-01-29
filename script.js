@@ -95,7 +95,7 @@ function CollatzExecute () {
             } else if (cc1.getCurrentStep() % 2 !== 0) {
                 str += " -- ";
                 cc1.addToHLength(4);
-                //cc1.addToHLength(String(cc1.getCurrentStep()).length);
+                cc1.addToHLength(String(cc1.getCurrentStep()).length);
 
                 cc1.takeStep();
             }
