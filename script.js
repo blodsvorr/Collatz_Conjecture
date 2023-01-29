@@ -74,6 +74,7 @@ function CollatzExecute () {
         let cc1 = new CollatzFunction(start);
 
         str += cc1.getCurrentStep();
+        str += "\n";
 
         while (cc1.getCurrentStep() !== 1) {
             if (cc1.getCurrentStep() % 2 === 0) {
@@ -85,26 +86,24 @@ function CollatzExecute () {
                     str += " ";
                 }
                 str += "|";
-
+                str += "\n";
                 cc1.takeStep();
 
-                str += "\n";
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
                     str += " ";
                 }
             } else if (cc1.getCurrentStep() % 2 !== 0) {
                 str += " -- ";
                 cc1.addToHLength(4);
-                cc1.addToHLength(cc1.getCurrentStep().length);
+                cc1.addToHLength(String.cc1.getCurrentStep().length);
 
                 cc1.takeStep();
             }
-
             str += cc1.getCurrentStep();
-            
+            str += "\n";
         }
 
-        str += "\nNumber of Steps";
+        str += "\nNumber of Steps\n";
         str += cc1.getStepCounter();
 
         document.getElementById ( 'CC' ).innerHTML = str ;
