@@ -67,30 +67,30 @@ this.horizLength += hAdd;
 }
 
 function CollatzExecute () {
-        let start = 256;
+        let start = 201;
         
         let str = "";
 
         let cc1 = new CollatzFunction(start);
 
         str += cc1.getCurrentStep();
-        str += "\n";
+        str += "\n\r";
 
         while (cc1.getCurrentStep() !== 1) {
             if (cc1.getCurrentStep() % 2 === 0) {
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    str += " ";
+                    str += "&nbsp;";
                 }
                 str += "\n"; 
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    str += " ";
+                    str += "&nbsp;";
                 }
                 str += "|";
-                str += "\n";
+                str += "\n\r";
                 cc1.takeStep();
 
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
-                    str += " ";
+                    str += "&nbsp;";
                 }
             } else if (cc1.getCurrentStep() % 2 !== 0) {
                 str += " -- ";
@@ -100,10 +100,10 @@ function CollatzExecute () {
                 cc1.takeStep();
             }
             str += cc1.getCurrentStep();
-            str += "\n";
+            str += "\n\r";
         }
 
-        str += "\nNumber of Steps\n";
+        str += "\n\rNumber of Steps\n\r";
         str += cc1.getStepCounter();
 
         document.getElementById ( 'CC' ).innerHTML = str ;
