@@ -67,7 +67,7 @@ this.horizLength += hAdd;
 }
 
 function CollatzExecute () {
-        let start = 163;
+        let start = 256;
         
         let str = "";
 
