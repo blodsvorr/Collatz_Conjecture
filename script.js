@@ -67,7 +67,7 @@ this.horizLength += hAdd;
 }
 
 function CollatzExecute () {
-        let start = 201;
+        let start = 231;
         
         let str = "";
 
@@ -81,7 +81,7 @@ function CollatzExecute () {
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
                     str += "&nbsp;";
                 }
-                str += "\n"; 
+                str += "\n\r"; 
                 for (let i = 0; i < cc1.getHorizLength(); i++) {
                     str += "&nbsp;";
                 }
