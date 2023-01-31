@@ -65,61 +65,62 @@ class CollatzFunction {
 }
 
 function CollatzExecute () {
-        let start = 191;
-        let cc1 = new CollatzFunction(start);
-        let thisStep = cc1.getCurrentStep();
-        let lastStep = thisStep;
-        let str = thisStep;
+  let start = 293;
+  let cc1 = new CollatzFunction(start);
+  let thisStep = cc1.getCurrentStep();
+  let lastStep = thisStep;
+  let str = thisStep;
 
-        while (thisStep !== 1) {
-          let thisLEN = String(thisStep).length;
+  while (thisStep !== 1) {
+    let thisLEN = String(thisStep).length;
           
-            if (thisStep % 2 === 0) {
-              let dent = "";
-              let ws = "" ;
-                
-              for (let i = thisLEN - 1; i > 0; i--) {
-                dent += "&nbsp;";
-              }
-              for (let i = cc1.getHorizLength(); i > 0; i--) {
-                ws += "&nbsp;";
-              }
-                
-              str +="<br>" + ws;
-              str += dent + "|";
-              str += "<br>" + ws;
-                
-            } else {
-                str += "——";
-                cc1.addToHLength(2);
-                cc1.addToHLength(thisLEN);
-            }
-            lastStep = thisStep;
-            cc1.takeStep();
-            thisStep = cc1.getCurrentStep();
-            
-            if (lastStep % 2 === 0) {
-              thisLEN = String(thisStep).length;
-              let lastLEN = String(lastStep).length;
-              let diff = lastLEN - thisLEN;
-              for (let i = diff; i > 0; i--) {
-                str += "&nbsp;";
-                cc1.addToHLength(1);
-              }
-            }
-            
-            str += thisStep;
+      if (thisStep % 2 === 0) {
+        let dent = "";
+        let ws = "" ;
+        
+        for (let i = thisLEN - 1; i > 0; i--) {
+          dent += "&nbsp;";
         }
-        
-        ctr = "Number of Steps";
-        ctr += "<br>";
-        ctr += cc1.getStepCounter();
-        ctr += "<br><br>";
-        
-        str = ctr + str ;
+        for (let i = cc1.getHorizLength(); i > 0; i--) {
+          ws += "&nbsp;";
+        }
+           
+        str +="<br>" + ws;
+        str += dent + "|";
+        str += "<br>" + ws;
+      }
+      else {
+        str += "——";
+        cc1.addToHLength(2);
+        cc1.addToHLength(thisLEN);
+      }
 
-        document.getElementById ( 'CC' ).style.width = cc1.getHorizLength ;
-        document.getElementById ( 'CC' ).innerHTML = str ;
+      lastStep = thisStep;
+      cc1.takeStep();
+      thisStep = cc1.getCurrentStep();
+      
+      if (lastStep % 2 === 0) {
+        thisLEN = String(thisStep).length;
+        let lastLEN = String(lastStep).length;
+        let diff = lastLEN - thisLEN;
+        for (let i = diff; i > 0; i--) {
+          str += "&nbsp;";
+          cc1.addToHLength(1);
+        }
+      }
+            
+      str += thisStep;
+  }
+        
+  ctr = "Number of Steps";
+  ctr += "<br>";
+  ctr += cc1.getStepCounter();
+  ctr += "<br><br>";
+        
+  str = ctr + str ;
+
+  document.getElementById ( 'CC' ).style.width = cc1.getHorizLength ;
+  document.getElementById ( 'CC' ).innerHTML = str ;
 }
 
 CollatzExecute() ;
