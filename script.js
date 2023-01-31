@@ -118,6 +118,7 @@ function CollatzExecute () {
         
         str = ctr + str ;
 
+        document.getElementById ( 'CC' ).style.width = cc1.getHorizLength ;
         document.getElementById ( 'CC' ).innerHTML = str ;
 }
 
