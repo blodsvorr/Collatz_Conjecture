@@ -65,7 +65,7 @@ class CollatzFunction {
 }
 
 function CollatzExecute () {
-        let start = 271;
+        let start = 191;
         let cc1 = new CollatzFunction(start);
         let thisStep = cc1.getCurrentStep();
         let lastStep = thisStep;
