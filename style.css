@@ -13,6 +13,7 @@ div {
 
 #CC {
 	display: block ;
+        width: fit-content ;
 	font-family: monospace ;
 	background-color: transparent ;
 	color: #9c9aff ;
