@@ -65,7 +65,7 @@ class CollatzFunction {
 }
 
 function CollatzExecute () {
-        let start = 231;
+        let start = 271;
         let cc1 = new CollatzFunction(start);
         let thisStep = cc1.getCurrentStep();
         let lastStep = thisStep;
@@ -90,8 +90,8 @@ function CollatzExecute () {
               str += "<br>" + ws;
                 
             } else {
-                str += " — ";
-                cc1.addToHLength(3);
+                str += "——";
+                cc1.addToHLength(2);
                 cc1.addToHLength(thisLEN);
             }
             lastStep = thisStep;
