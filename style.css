@@ -1,23 +1,39 @@
 * {
-  padding: 0 ;
-  margin: 0 ;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 body {
-  background-color: #000000 ;
+  margin: 1em;
+  background-color: #000000;
 }
 
 div {
-  position: relative ;
+  position: relative;
 }
 
-#CC {
-  display: block ;
-  white-space: pre;
-  font-family: monospace ;
-  background-color: transparent ;
-  color: #9c9aff ;
-  font-size: 8pt ;
-  line-height: 8pt ;
-  transform: scale(1,0.8) ;
+.coco {
+  display: block;
+  width: fit-content;
+  font-family: monospace;
+  background-color: transparent;
+  color: #9c9aff;
+  font-size: 8pt;
+  line-height: 1.5;
+}
+
+#in {
+  padding: 0.5em ;
+  border: 2px #9c9aff solid ;
+  border-style: solid none ;
+  font-size: 12pt;
+  width: 12em;
+}
+
+#button {
+  padding: 0.5em;
+  border: 2px #9c9aff solid;
+  border-style: none solid ;
+  font-size: 12pt;
 }
