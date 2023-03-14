@@ -134,3 +134,10 @@ let bttnEl = document.getElementById ( 'button' ) ;
 
 inEl.oninput = function() {start_in()} ;
 bttnEl.onclick = function() {CollatzExecute(input)};
+
+inEl.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    bttnEl.click();
+  }
+});
