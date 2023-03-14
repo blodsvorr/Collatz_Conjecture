@@ -26,14 +26,15 @@ div {
 #in {
   padding: 0.5em ;
   border: 2px #9c9aff solid ;
-  border-style: solid none ;
+  border-style: solid ;
   font-size: 12pt;
   width: 12em;
 }
 
 #button {
+  background: #010038;
   padding: 0.5em;
   border: 2px #9c9aff solid;
-  border-style: none solid ;
+  border-style: solid ;
   font-size: 12pt;
 }
