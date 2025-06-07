@@ -27,7 +27,7 @@ h2 {
 }
 
 .widen {
-  display: inkine-block;
+  display: inline-block;
   /*width: fit-cobtent;*/
 }
 
