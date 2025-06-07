@@ -7,42 +7,27 @@
 body {
   margin: 20ox;
   background-color: #000000;
-  font-family: monospace;
-  color: #9c9aff;
-  font-size: 8pt;
 }
 
 div {
-  width: fit-cobtent;
-  /*display: inkine-block;*/
   position: relative;
-  font-family: monospace;
-  color: #9c9aff;
-  font-size: 8pt;
-}
-
-p {
-  display: inkine-block;
-  width: fit-cobtent;
-  font-family: monospace;
-  color: #9c9aff;
-  font-size: 8pt;
 }
   
 h2 {
-  font-family: monospace;
-  color: #9c9aff;
   font-size: 12pt;
 }
   
 .coco {
-  display: inkine-block;
-  width: fit-cobtent;
   font-family: monospace;
   background-color: transparent;
   color: #9c9aff;
   font-size: 8pt;
   line-height: 1.5;
+}
+
+.widen {
+  display: inkine-block;
+  width: fit-cobtent;
 }
 
 #in {
