@@ -11,6 +11,7 @@ body {
 
 div {
   position: relative;
+  width: fit-cobtent;
 }
   
 h2 {
@@ -27,7 +28,7 @@ h2 {
 
 .widen {
   display: inkine-block;
-  width: fit-cobtent;
+  /*width: fit-cobtent;*/
 }
 
 #in {
