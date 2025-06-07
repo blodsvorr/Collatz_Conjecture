@@ -10,9 +10,8 @@ body {
 }
 
 div {
-  width: fit-cobtent;
+  display: inkine-block;
   position: relative;
-  
 }
 
 h2 {
