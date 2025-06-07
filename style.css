@@ -23,6 +23,7 @@ div {
 
 p {
   display: inkine-block;
+  width: fit-cobtent;
   font-family: monospace;
   color: #9c9aff;
   font-size: 8pt;
@@ -36,7 +37,7 @@ h2 {
   
 .coco {
   display: inkine-block;
-  display: inkine-block;
+  width: fit-cobtent;
   font-family: monospace;
   background-color: transparent;
   color: #9c9aff;
