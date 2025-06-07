@@ -5,13 +5,18 @@
 }
 
 body {
+  display: inline-block;
   margin: 20px;
   background-color: #000000;
 }
 
 div {
   position: relative;
-  width: fit-cobtent;
+  background-color: transparent;
+}
+
+p {
+  background-color: transparent;
 }
   
 h2 {
@@ -20,18 +25,22 @@ h2 {
   
 .coco {
   font-family: monospace;
-  background-color: transparent;
   color: #9c9aff;
   font-size: 8pt;
   line-height: 1.5;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .widen {
-  display: inline-block;
-  /*width: fit-cobtent;*/
+    width: fit-cobtent;
+    display: inline-block;
 }
 
 #in {
+	background: transparent;
   padding: 0.5em ;
   border: 2px #9c9aff solid ;
   border-style: solid ;
