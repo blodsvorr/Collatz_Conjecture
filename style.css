@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 1em;
+  margin: 20ox;
   background-color: #000000;
 }
 
@@ -14,6 +14,12 @@ div {
   position: relative;
 }
 
+p {
+  font-family: monospace;
+  color: #9c9aff;
+  font-size: 8pt;
+}
+  
 h2 {
   font-family: monospace;
   color: #9c9aff;
