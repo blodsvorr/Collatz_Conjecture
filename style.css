@@ -11,11 +11,11 @@ body {
 
 div {
   position: relative;
+  display: inkine-block;
 }
 
 .coco {
-  display: block;
-  width: fit-content;
+  width: fit-cobtent;
   font-family: monospace;
   background-color: transparent;
   color: #9c9aff;
