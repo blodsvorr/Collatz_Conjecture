@@ -10,7 +10,8 @@ body {
 }
 
 div {
-  display: inkine-block;
+  width: fit-cobtent;
+  /*display: inkine-block;*/
   position: relative;
 }
 
