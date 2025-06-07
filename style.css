@@ -10,8 +10,9 @@ body {
 }
 
 div {
+  width: fit-cobtent;
   position: relative;
-  display: inkine-block;
+  
 }
 
 h2 {
@@ -21,7 +22,7 @@ h2 {
 }
   
 .coco {
-  width: fit-cobtent;
+  display: inkine-block;
   font-family: monospace;
   background-color: transparent;
   color: #9c9aff;
